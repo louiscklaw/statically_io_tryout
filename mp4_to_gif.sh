@@ -14,7 +14,10 @@ set -ex
 # ffmpeg -y -ss 30 -t 15 -i japan_university.mp4 -vf "fps=10,scale=480:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 japan_university.gif &
 
 
-ffmpeg -y -ss 30 -t 15 -i japan_university2.webm -vf "fps=10,scale=480:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 japan_university2.gif &
+# ffmpeg -y -ss 30 -t 15 -i japan_university2.webm -vf "fps=10,scale=480:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 japan_university2.gif &
+
+# youtube-dl https://www.youtube.com/watch\?v\=JUdlX4Eia2o
+ffmpeg -y -ss 30 -t 15 -i cat.webm -vf "fps=10,scale=480:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 cat.gif &
 
 wait
 
