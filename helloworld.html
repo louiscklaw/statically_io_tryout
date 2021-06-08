@@ -13,10 +13,36 @@
 
     <link
       rel="prefetch"
+      href="https://cdn.statically.io/gh/louiscklaw/statically_io_tryout/master/kite.gif"
+    />
+
+    <link rel="prefetch" href="/kite.gif" />
+
+    <link
+      rel="prefetch"
       href="https://cdn.statically.io/gh/louiscklaw/statically_io_tryout/master/youtube.gif"
     />
   </head>
-  <body>
+  <body style="padding: 0; margin: 0; box-sizing: border-box">
+    <div
+      style="
+        width: 100%;
+        height: 800px;
+
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-image: url('/kite.gif');
+      "
+    ></div>
+
+    <!-- The video -->
+    <!--
+      <video autoplay muted loop id="myVideo">
+        <source src="viutv_test_bg.mp4" type="video/mp4" />
+      </video>
+    -->
+
     helloworld
   </body>
 </html>
